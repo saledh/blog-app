@@ -1,14 +1,11 @@
+import { User } from "../app.model";
+
 export interface LoginRequest {
-    email: string;
-    password: string;
-    role?: 'user' | 'admin';
-  }
-  
-  export interface LoginResponse {
-    auth: string;
-    // user: {
-    //   id: string;
-    //   email: string;
-    //   role: string;
-    // };
-  }
+  email: string,
+  password: string,
+}
+
+export interface LoginResponse {
+  auth: string,
+  user: User,
+}

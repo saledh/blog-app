@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { DetailsComponent } from './details/details.component';
 import { LoginComponent } from './login/login.component';
 
 const routeConfig: Routes = [
@@ -10,13 +9,13 @@ const routeConfig: Routes = [
     title: 'Login page'
   },
   {
-    path: 'dashboard',
+    path: 'articles',
     component: HomeComponent,
     title: 'Home page'
   },
   {
-    path: 'details/:id',
-    component: DetailsComponent,
+    path: 'dashboard',
+    component: HomeComponent,
     title: 'Home details'
   }
 ];
