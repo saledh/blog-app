@@ -15,10 +15,6 @@ import { CommonModule } from '@angular/common';
       </form>
     </section>
     <section class="results">
-      <app-housing-location
-        *ngFor="let housingLocation of housingLocationList"
-        [housingLocation]="housingLocation">
-      </app-housing-location>
     </section>
   `,
   styleUrls: ['./home.component.css'],
